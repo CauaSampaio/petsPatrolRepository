@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Patrol</title>
+    <script src="../src/register.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <div class="navContent">
+            <div class="homeBtn">
+                <a href="../pages/index.html"><img src="../assets/img/houseButton.png" alt=""></a>
+            </div>
+            <div class="logoPets">
+                <img src="../assets/img/logopetspatrol.png" alt="">
+            </div>
+            <div class="login">
+                <p>Já tem uma conta ? <a href="">Entrar</a></p>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+            
+            <div class="formContainer " id="formContainer">
+
+                <div class="tittleContainer">
+                    <div class="tittleContent">
+                        <div class="text"> 
+                            <h1>Cadastro</h1>
+                        </div>
+                        <div class="button">
+                            <p>Já tem uma conta ? </p>
+                            <a href="#" id="alterButton">Entrar</a>
+                        </div>
+                    </div>
+               </div>
+    
+
+                <form class="formContent" action="http://localhost:3000/auth/register" method="POST" enctype="application/x-www-form-urlencoded">
+                    <div class="inputs">
+                        <label class="" for="nameCad">Nome Completo</label>
+                        <input type="text" name="nameCad" id="nameCad" required placeholder="Ex: Nome Sobrenome">
+                    </div>
+                    <div class="inputs">
+                        <label class="" for="emailCad">Email</label>
+                        <input type="email" name="emailCad" id="emailCad" required placeholder="Ex: exemplo@email.com">
+                    </div>
+                    <div class="inputs">
+                        <label class="" for="passwordCad">Senha</label>
+                        <input type="password" name="passwordCad" id="passwordCad" required placeholder="Pelo menos 8 caracteres">
+                    </div>
+
+                    <div class="inputs">
+                        <label class="" for="passwordCadConfirm">Confirmar senha</label>
+                        <input type="password" name="passwordCadConfirm" id="passwordCadConfirm" required placeholder="Deve ser igual a anterior">
+                    </div>
+
+                    
+
+                    <div class="inputs">
+                        <button type="submit" class="selectUser" id="cadBtn">
+                            Cadastre-se
+                        </button>
+                    </div>
+                    
+                    <div class="registerMessage">
+                      <div class="registerMessageContainer">
+                        <p>Ou Cadastre-se com</p>
+                        <div class="googleContainer">
+                            <div class="googleIcon">
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                    <br> 
+
+                <div class="privacityContainer">
+                    <div class="privacityContent">
+                        <p class="privacity">
+                            Ao se inscrever você concorda com os 
+                            <br> 
+                            <a href="">
+                                Termo de Uso  & Política de Privacidade 
+                            </a>
+                        </p>
+                    </div>
+                </div>
+              </form>
+
+            </div>
+
+            <div class="formContainerSec hidden" id="formContainerSec">
+
+                <div class="tittleContainer">
+                    <div class="tittleContent">
+                        <div class="text"> 
+                            <h1>Login</h1>
+                        </div>
+                        <div class="button">
+                            <p>Não tem uma conta ? </p><a href="#" id="alterButtonSec">Cadastre-se</a>
+                        </div>
+                    </div>
+               </div>
+    
+
+                <form class="formContent" action="http://localhost:3000/auth/login" method="POST">
+                   
+                    <div class="inputs">
+                        <label class="" for="emailLogin">Email</label>
+                        <input type="email" name="emailCad" id="emailLogin" required placeholder="Ex: exemplo@email.com">
+                    </div>
+                    <div class="inputs">
+                        <label class="" for="passwordLogin">Senha</label>
+                        <input type="password" name="passwordCad" id="passwordLogin" required placeholder="Pelo menos 8 caracteres">
+                    </div>
+
+                    <div class="inputs">
+                        <button type="submit" id="loginBtn">
+                            Cadastre-se
+                        </button>
+                    </div>
+                    
+                    <div class="registerMessage">
+                      <div class="registerMessageContainer">
+                        <p>Ou Cadastre-se com</p>
+                        <div class="googleContainer">
+                            <div class="googleIcon">
+                                <i class="fa-brands fa-google"></i>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                
+
+                <div class="privacityContainer">
+                    <div class="privacityContent">
+                        <p class="privacity">
+                            Ao se inscrever você concorda com os 
+                            <br> 
+                            <a href="">
+                                Termo de Uso  & Política de Privacidade 
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+            </div>
+
+</main>
+
+<br>
+<br>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <p>&copy; Pets Patrol - Privacidade - Termos</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>

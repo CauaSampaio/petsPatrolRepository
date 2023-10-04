@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/* Importe a fonte de Poppins como você fez anteriormente */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Use a propriedade box-sizing para evitar problemas de layout */
+}
+.hidden {
+    display: none;
+}
+body {
+    background-color: #d8cac8ab;
+    background-image: url(../img/cachorroIndex.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Use flex para permitir que o rodapé fique no final da página */
+}
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    gap: -2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.logoContent {
+    padding-top: 5px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.profileContainer {
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 4px;    
+    background-color: rgba(245, 245, 245, 0.344);
+}
+
+.menuDropDown {
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 16px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4px;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.344);
+    font-weight: bold;
+}
+
+.dropDownContent {
+    display: flex;
+
+}
+
+main {
+    padding: 12px;
+    flex: 1; /* Permite que o conteúdo principal ocupe o espaço restante */
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.text p {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button {
+    
+    background-color: rgba(245, 245, 245, 0.344);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.lineContainer {
+    width: 100%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.line {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+footer ul {
+    display: flex;
+    gap: 12px;
+    color: black;
+    font-weight: bold;
+}
+.inputEmail {
+    display: none;
+}
+.socialMediaList {
+    display: none;
+}
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(../img/cachorroIndexDesk.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        min-height: 100vh;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .dropDownRs {
+        display: none;
+    }
+    .menuDropDown {
+        display: none;
+    }
+    .socialMediaList {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding-top:5px;
+        gap: 12px;
+    }
+
+}
+@media screen and (min-width: 920px) {
+   
+    footer {
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+        height: auto; 
+        align-items: center;
+    }
+    input {
+        background-color: rgb(255, 255, 255);
+        width: 200px;
+        padding: 6px;
+        border-radius: 6px;
+        border: 1px solid black;
+        outline: none;
+    }
+    .inputEmail {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+    }
+    .inputEmail p {
+        font-size: 16px;
+        color: black;
+        font-weight: bolder;
+    }
+    
+}
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url(../img/cachorroIndexStv.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        min-height: 100vh;
+    }
+    .profileContainer {
+        width: 150px;
+        border: 1px solid black;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        padding: 4px;    
+        background-color: rgba(245, 245, 245, 0.344);
+    }
+    
+    .menuDropDown {
+        width: 150px;
+        border: 1px solid black;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4px;
+        align-items: center;
+        background-color: rgba(245, 245, 245, 0.344);
+        font-weight: bold;
+    }
+    
+}

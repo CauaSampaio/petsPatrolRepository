@@ -1,0 +1,116 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    width: 100%;
+}
+body {
+    overflow-x: hidden;
+    background-color: #f0eff2;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 12px;
+    overflow-x: hidden;
+}
+.cadTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.input {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 12px;
+}
+.button {
+    padding: 18px;
+    width: 105%;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0);
+}
+input[type="radio"] {
+    display: none;
+}
+.label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    min-width: 120px; 
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+}
+input[type="radio"]:checked + .label {
+    background-color: rgba(0, 128, 0, 0.201);
+}
+
+@media screen and (min-width: 700px){
+    body {
+        background-image: url(../img/bgChooseUser.png);
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .formContainer {
+        width: 40%;
+    }
+    .cadTitle {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 900px){
+    body {
+        background-image: url(../img/bgChooseUser.png);
+        background-repeat: no-repeat;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 20px;
+    }
+    .formContainer {
+        width: 40%;
+    }
+    .cadTitle {
+        width: 40%;
+    }
+}
