@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/upload.css">
+    <title>Pets Patrol</title>
+</head>
+<body>
+    <main>
+        <h1>Cadastrar Evento</h1>
+        <form action="/ong/uploadimage" method="post" enctype="multipart/form-data">
+
+            <div class="input">
+                <label for="filename">URL da imagem:</label>
+                <input type="text" name="filename" accept="image/*" required>
+            </div>
+
+            <div class="input">
+                <label for="tituloEvento">Título do evento:</label>
+                <input type="text" name="tituloEvento" required>
+            </div>
+
+            <div class="input">
+                <label for="descricao">Descrição do evento:</label>
+                <textarea type="text" maxlength="300" name="descricao" required> </textarea>
+            </div>
+
+            <div class="input">
+                <label for="dataEvento">Data do evento:</label>
+                <input type="text" name="dataEvento" required>
+            </div>
+
+            <div class="button">
+                <button type="submit">Publicar Evento</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+</html>

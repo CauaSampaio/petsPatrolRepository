@@ -12,7 +12,7 @@
 }
 body {
     background-color: #d8cac8ab;
-    background-image: url(../img/cachorroIndex.png);
+    background-image: url(../images/cachorroIndex.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -48,12 +48,14 @@ ul {
 }
 
 .profileContainer {
-    width: 100px;
+    width: 40px;
+    height: 40px;
     border: 1px solid black;
-    border-radius: 16px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
-    padding: 4px;    
+    align-items: center;
+    padding: 2px;    
     background-color: rgba(245, 245, 245, 0.344);
 }
 
@@ -143,7 +145,7 @@ footer ul {
 }
 @media screen and (min-width: 600px) {
     body {
-        background-image: url(../img/cachorroIndexDesk.png);
+        background-image: url(../images/cachorroIndexDesk.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
@@ -200,7 +202,7 @@ footer ul {
 }
 @media screen and (min-width: 600px) {
     body {
-        background-image: url(../img/cachorroIndexStv.png);
+        background-image: url(../images/cachorroIndexStv.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;

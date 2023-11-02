@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(200, 197, 197);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c66969
+}
+::selection {
+  background-color: #c66969;
+  color: white;
+}
+body {
+ font-family: 'Prompt', sans-serif;
+ overflow-x: hidden;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+}
+.etiquetas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+}
+.etiqueta {
+    border: 1px solid black;
+    display: flex;
+    gap: 5px;
+    padding: 7px;
+    width: 90%;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.opcao1 {
+    background-color: #F5555AFF;
+}
+.opcao2 {
+    background-color: #FF873CFF;;
+}
+.opcao3 {
+    background-color: #FDC860FF;
+}
+.estoqueTitle {
+    padding: 12px;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;  
+    width: 40%;
+    text-align: justify;
+}
+input {
+    border-radius: 12px;
+    padding: 3px;
+    outline: none;
+}
+button {
+    display: flex;
+    gap: 50px;
+    border: 1px solid black;
+    padding: 7px;
+    width: 94%;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    font-size: 20px;
+    background-color: black;
+    color: white;   
+}
+
+button:hover {
+    cursor: pointer;
+}

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 * {
     padding: 0px;
     margin: 0px;
@@ -13,14 +14,48 @@
   background-color: #c66969;
   color: white;
 }
+body {
+ font-family: 'Prompt', sans-serif;
+ overflow-x: hidden;
+}
 .hidden {
   display: none;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
-body {
-    font-family: 'Prompt', sans-serif;
-}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px; 
 
+}
+.searchForm{
+  border: 1px solid black;
+  display: flex;
+  width: 220px;
+  padding: 4px;
+  height: 20px;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+.searchForm button{
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: none;
+  width: 20%;
+}
+.searchForm input {
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 100%;
+}
+button:hover {
+    cursor: pointer
+}
+form { 
+  display: flex;
+  width: 100%;
+}
 .carousel {
   width: 100%;
   margin: 0 auto;
@@ -73,7 +108,7 @@ body {
   text-align: center;
 }
 .textConfig{
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -84,7 +119,11 @@ body {
   color: #9095A1FF;
 }
 .textConfigContainer {
-  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .cardContainer {
   width: 100%;
@@ -218,6 +257,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 364px;
 }
 
 .ong-card-carousel {
@@ -229,6 +269,7 @@ body {
   margin-left: 12px;
   display: flex;
   transition: 0.3s ease;
+  height: 364px;
 }
 
 .ong-card {
@@ -252,7 +293,7 @@ body {
   border-top-left-radius: 12px;
 }
 
-.ong-card-info {
+.ong-card-info {  
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -412,7 +453,7 @@ body {
     display: none;
   }
   .cardContent {
-    background-image: url(../img/infoImg.png);
+    background-image: url(../images/infoImg.png);
     background-repeat: no-repeat;
     background-position: right;
   }

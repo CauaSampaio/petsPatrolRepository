@@ -3,7 +3,6 @@
 nav {
     width: 100%;
     font-family: 'Prompt';
-    background-color: #F6B7BE;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
     text-decoration: none;
     height: 60%;
 }
-.logoPets {
+/* .logoPets {
     width: 54.95%;
     display: flex;
     align-items: center;
@@ -36,7 +35,7 @@ body {
   display: flex;
   align-items: center;
   display: none;
-}
+} */
 
 /* Responsive */
 

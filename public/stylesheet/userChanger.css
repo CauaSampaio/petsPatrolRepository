@@ -82,7 +82,10 @@ input[type="radio"]:checked + .label {
 
 @media screen and (min-width: 700px){
     body {
-        background-image: url(../img/bgChooseUser.png);
+        background-image: url(../images/bgChooseUser.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: left;
     }
     main {
         display: flex;
@@ -98,7 +101,7 @@ input[type="radio"]:checked + .label {
 }
 @media screen and (min-width: 900px){
     body {
-        background-image: url(../img/bgChooseUser.png);
+        background-image: url(../images/bgChooseUser.png);
         background-repeat: no-repeat;
     }
     main {

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(200, 197, 197);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c66969
+}
+
+::selection {
+  background-color: #c66969;
+  color: white;
+}
+
+.hidden {
+  display: none!important;
+}
+
+
+
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 7px;
+    justify-content: start;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+form p {
+    font-size: 12px;
+}
+.formTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formTitle h1{
+    font-size: 26px;
+}
+.formTitle p {
+    color: #171A1FFF;
+    font-size: 14px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+} 
+
+.input {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 2px;
+}
+
+input::placeholder {
+    font-size: 10px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+button {
+    width: 200px;
+    height: 30px;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black ;
+    border-radius: 10px;
+    font-size: 12px;
+
+}
+#loginForm {
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+footer { 
+    border-top: 0.5px solid black;
+    display: flex;
+}
+
+footer ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 700px) {
+    form .inputs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+    }
+    aside:nth-child(1) {
+        width: 33%;
+    }
+    aside:nth-child(2) {
+        width: 38%;
+    }
+    aside:nth-child(3) {
+        width: 38.33%;
+        justify-content: center;
+    }
+    form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

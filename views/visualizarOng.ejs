@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/stylesheet/ong.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> <%= ong.nomeOng %> </title>
+</head>
+<body>
+    <div class="principal">
+        <main>
+            <div class="bannerOng">
+                <img src="<%=ong.banner %>" width="100%" height="450px" style="border-radius: 10px;" >
+            </div>
+            <aside class="perfilConfig">
+                <div class="userName">
+                    <h1> <%= ong.nomeOng %> </h1>
+                </div>
+                <div class="accessButtons">
+                    <ul>
+                        <li> <i class="fa-regular fa-comment"></i> </li>
+                        <li> <i class="fa-regular fa-calendar"></i> </li>
+                        <li> <i class="fa-solid fa-list-check"></i> </li>
+                    </ul>
+                </div>
+                <div class="userContact">   
+                    <ul>
+                        <li> <i class="fa-solid fa-phone"></i> <%= ong.telefoneOng %> </li>
+                        <li> <i class="fa-solid fa-location-dot"></i>  <%= ong.ongEndereco %> </li>
+                        <li> <i class="fa-brands fa-pix"></i> <%= ong.chavePix %> </li>
+                    </ul>
+                </div>
+                <div class="userBio">
+                    
+                    <p> <b>Sobre o nosso trabalho: </b> <%= ong.ongBio %></p>
+                    <p> <b>Nossos amiguinhos são: </b> <%= ong.animais %>. </p>
+                    <p> <b>Nossos doentinhos são: </b> <%= ong.doentes %> </p>
+                </div>
+            </aside>
+                           
+            
+         
+            
+  
+            <aside class="etiquetasDoacao">
+                <div class="etiquetasTitle">
+                    <h3>Nos Ajude !</h3>
+                </div>
+                <% if (novaEtiqueta.length > 0) { %>
+                  <% const etiqueta = novaEtiqueta.find(etiqueta => etiqueta.ong.toString() === ong._id.toString()) %>
+                  <% if (etiqueta) { %>
+                    <div class="etiquetas etiqueta etiquetaUm">
+                      <p class=""><%= etiqueta.etiquetaUm %></p>
+                    </div>
+                    <div class="etiquetas etiqueta etiquetaDois">
+                      <p class="nomeRemedio"><%= etiqueta.etiquetaDois %></p>
+                    </div>
+                    <div class="etiquetas etiqueta etiquetaTres">
+                      <p>Nenhum Etiqueta Cadastrada.</p>
+                    </div>
+                  <% } %>
+                  <% } else { %>
+                    <div class="outrosButton">
+                      <p>Nenhum evento disponível.</p>
+                    </div>
+                <% } %>
+                
+
+          </aside>
+
+          <aside class="eventosPublicados">
+              <div class="eventosPublicadosTitle">
+                  <h3>Nossos Eventos</h3>
+              </div>
+              <% if (novoUpload.length > 0) { %>                        
+                  <ul>
+                    <% novoUpload.forEach(uploadItem => { %>
+                      <% if (uploadItem.ong.toString() === ong._id.toString()) { %>
+                        <li class="publicacao">
+                          <div class="evento">
+                            <div class="imagem">
+                              <img src="<%= uploadItem.filename %>" alt="Imagem do Evento">
+                            </div>
+                            <div class="conteudo">
+                              <h3><%= uploadItem.tituloEvento %></h3>
+                              <p><%= uploadItem.descricao %></p>
+                              <p><%= uploadItem.dataEvento %></p>
+                            </div>
+                          </div>
+                        </li>
+                      <% } %>
+                    <% }); %>
+                  </ul>
+                <% } else { %>
+                  <p>Nenhum evento disponível.</p>
+                <% } %>
+                
+                
+          </aside>
+        </main>
+    </div>
+</body>
+</html>

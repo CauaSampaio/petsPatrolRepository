@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Pets Patrol </title>
+  <link rel="stylesheet" href="/stylesheet/estoque.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <main>
+  
+    <div class="estoqueTitle">
+      <h1>Etiquetas</h1>
+      <p>
+        Para que o usuário consiga visualizar 
+        melhor as necessidades mais urgentes da sua 
+        organização, o nosso sistema funciona com um 
+        sistema de etitquetas. Selecione até 3 etiquetas 
+        abaixo. 
+        <br>
+        Ex: Medicamentos, Alimentos, Dinheiro, Higiene, Limpeza, Roupa, Brinquedo
+      </p>
+    </div>
+  
+  <form id="opcoesForm" action="/ong/etiquetas" method="post">
+      <div class="etiquetas">
+
+        <div class="etiqueta opcao1">
+          <label for="etiquetaUm"> <i class="fa-solid fa-sm fa-plus" style="color: #FFFFFF;"></i> Etiqueta 1</label>
+          <input type="text" name="etiquetaUm" id="etiquetaUm">
+        </div>  
+
+        <div class="etiqueta opcao2">
+          <label for="etiquetaDois"> <i class="fa-solid fa-sm fa-plus" style="color: #FFFFFF;"></i> Etiqueta 2</label>
+          <input type="text"  name="etiquetaDois" id="etiquetaDois">
+        </div>
+
+        <div class="etiqueta opcao3">   
+          <label for="opcao3">  <i class="fa-solid fa-sm fa-plus" style="color: #FFFFFF;"> </i> Etiqueta 3 </label>
+          <input type="text" name="etiquetaTres" id="etiquetaTres">
+        </div>
+        
+      </div>
+
+      
+      <button type="submit" id="atualizar"> ! Preciso de Doações</button>
+  </form>
+  </main>  
+</body>
+</html>
+

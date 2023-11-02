@@ -1,3 +1,0 @@
-# petsPatrolRepositorio
-
-// Projeto PetsPatrol

@@ -134,13 +134,12 @@ footer {
 
 @media screen and (min-width: 700px){
     body {
-        background-image: url(../img/bgChooseUser.png);
     }
 }
 
 @media screen and (min-width: 750px) {
     body {
-        background-image: url(../img/bgChooseUser.png);
+        background-image: url(../images/bgChooseUser.png);
         background-repeat: no-repeat;
         background-position: right top;
     }
@@ -173,7 +172,8 @@ footer {
 
 @media screen and (min-width: 900px){
     body {
-        background-image: url(../img/bgChooseUser.png);
+        background-image: url(../images/bgChooseUser.png);
         background-repeat: no-repeat;
+        background-position: right top;
     }
 }

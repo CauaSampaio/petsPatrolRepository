@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascripts/ongRegister.js" defer></script>
+    <link rel="stylesheet" href="/stylesheet/ongRegister.css">
+    <title> Pets Patrol </title>
+</head>
+<body>
+    <nav>
+        <p>já possui cadastro ? <a href="#" id="toggleForm">Entrar</a></p>
+    </nav>
+    <main>
+        <div class="formContainer" id="registerForm">
+
+            <form action="http://localhost:3000/auth/registerong" method="POST">
+
+                
+
+                <div class="inputs">
+                    
+                    <aside class="ong">
+
+                        <div class="formTitle">
+                            <h1>Olá, Ong !</h1>
+                            <p>Conte mais sobre a sua ONG</p>
+                        </div> 
+
+                        <div class="input">
+                            <label for="nomeOng"> Nome da ONG</label>
+                            <input type="text" name="nomeOng" id="nomeOng" placeholder="Digite o nome da ONG">
+                        </div>
+                        
+                        <div class="input">
+                            <label for="chavePix">Chave PIX da ONG </label>
+                            <input type="text" name="chavePix" id="chavePix" placeholder="Digite o email de contato">
+                        </div>
+
+                        <div class="input">
+                            <label for="telefoneOng"> Telefone de Contato</label>
+                            <input type="tel" name="telefoneOng" id="telefoneOng" placeholder="Digite telefone de contato">
+                        </div>
+
+                        <div class="input">
+                            <label for="animais"> Quantos animais estão sendo cuidados</label>
+                            <input type="number" id="animais" name="animais">
+                        </div>
+
+                        <div class="input">
+                            <label for="filhote"> Quantos são filhotes ? </label>
+                            <input type="number" id="filhote" name="filhote">
+                        </div>
+
+                        <div class="input">
+                            <label for="doentes"> Quantos estão doentes ? </label>
+                            <input type="number" id="doente" name="doentes">
+                        </div>
+                        
+                    </aside>
+
+                    <aside class="representante">
+
+                        <div class="formTitle">
+                            <h1>Olá, Representante !</h1>
+                            <p>Cadastre-se em nosso sistema</p>
+                        </div> 
+
+                        <div class="input">
+                            <label for="userNameOng"> Nome</label>
+                            <input type="text" name="userNameOng" id="userNameOng" placeholder="Digite o nome do representante da ong">
+                        </div>
+                        
+                        <div class="input">
+                            <label for="userEmailOng"> Email</label>
+                            <input type="text" name="userEmailOng" id="userEmailOng" placeholder="Digite o email do representante da ong">
+                        </div>
+                        <div class="input">
+                            <label for="userPasswordOng"> Senha</label>
+                            <input type="password" name="userPasswordOng" id="userPasswordOng" placeholder="Digite uma senha">
+                        </div>
+                        <div class="input">
+                            <label for="passwordConfirmOng"> Confirme a sua senha</label>
+                            <input type="password" id="passwordConfirmOng" name="passwordConfirmOng">
+                        </div>                        
+                    </aside>
+
+                    <aside class="dadosImportantes">
+                        <div class="formTitle">
+                            <h1>Nos conte mais!</h1>
+                            <p>Deixe abaixo informações importantes:</p>
+                        </div> 
+
+                        <div class="input">
+                            <label for="banner"> Banner da Ong </label>
+                            <input type="text" name="banner" id="banner" placeholder="Ex: www.imagem.com">
+                        </div>
+
+                        <div class="input">
+                            <label for="ongEndereco"> Endereço </label>
+                            <input type="text" name="ongEndereco" id="ongEndereco" placeholder="Ex: Av. Tancredo Neves, N229">
+                        </div>
+                        
+                        <div class="input">
+                            <label for="ongBio"> Resumo</label>
+                            <input type="text" name="ongBio" id="ongBio" placeholder="Fale um pouco sobre a sua ONG">
+                        </div>   
+                    </aside>
+              </div>             
+              
+              <aside class="buttonSub">                        
+                <div class="submit">
+                    <button type="submit">
+                        Cadastrar
+                    </button>
+                </div>
+            </aside> 
+        </form>
+    </div>               
+
+    <div id="loginForm" class="hidden">
+        <form action="http://localhost:3000/auth/loginong" method="post">
+            <aside class="representante">
+                <div class="formTitle">
+                    <h1>Login</h1>
+                    <p>Já possui cadastro ?</p>
+                </div>
+                <div class="input">
+                    <label for="userEmailOng"> Email</label>
+                    <input type="text" name="userEmailOng" id="" placeholder="Digite o email do representante da ong">
+                </div>
+                <div class="input">
+                    <label for="userPasswordOng"> Senha</label>
+                    <input type="password" name="userPasswordOng" id="" placeholder="Digite uma senha">
+                </div>                      
+            </aside>
+            <aside class="">                        
+                <div class="submit">
+                    <button type="submit">
+                        Entrar
+                    </button>
+                </div>
+            </aside> 
+        </form>    
+    </div>
+    </main>
+
+    <br><hr>
+
+    <footer>
+        <ul>
+            <li>&copy;</li>
+            <li> Pets Patrol </li>
+            <li> Privacidade </li>
+            <li> Termos </li>
+        </ul>
+    </footer>
+</body>
+</html>

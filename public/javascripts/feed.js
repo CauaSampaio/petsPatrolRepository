@@ -24,9 +24,7 @@ function updateCarousel() {
   });
 }
 
-
-// Carrossel de cards
-
+// Carrossel de cards - eventos
 const eventCardContainer = document.getElementById('event-card-container');
 const eventCards = eventCardContainer.querySelectorAll('.event-card');
 
@@ -100,7 +98,6 @@ function checkBoundaries() {
 
 
 // Terceiro Carrossel 
-
 const ongCardContainer = document.getElementById('ong-card-container');
 const ongCards = ongCardContainer.querySelectorAll('.ong-card');
 

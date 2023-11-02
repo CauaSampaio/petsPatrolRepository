@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Patrol</title>
+    <link rel="stylesheet" href="/stylesheet/navbar.css">
+    <link rel="stylesheet" href="/stylesheet/userChanger.css">
+    <script src="/javascripts/script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="navContent">
+            <div class="homeBtn">
+                <a href="index"><img src="/images/houseButton.png" alt=""></a>
+            </div>
+            <div class="logoPets">
+                <img src="/images/logopetspatrol.png" alt="">
+            </div>
+            <div class="login">
+                <p>Já tem uma conta ? <a href="register"  style="color: black;">Entrar</a></p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cadTitle">
+            <h1>Cadastro</h1>
+
+            <br>
+            <div class="">
+                <p>Já tem uma conta ? <a href="register" style="color: black;">Entrar</a></p>
+            </div>
+            <br>
+            <h4>Informe qual tipo de usuário você é: </h4>
+            
+        </div>
+
+        <br> <br>
+
+        <div class="formContainer">
+            <div class="formContent">
+                <form class="form">
+                    <div class="input">                     
+                        <input type="radio" value="ong" name="userType" id="userTypeONG">
+                        <label class="label" for="userTypeONG"><p>ONGs: Tem um espaço dedicado para cuidar de animais</p></label>
+                    </div>
+
+                    <br>
+
+                    <div class="input">                        
+                        <input type="radio" value="voluntario" name="userType" value="user" id="userTypeVoluntario">
+                        <label class="label" for="userTypeVoluntario">Voluntário: Tem interesse em colaborar com a causa animal</label>
+                    </div>                    
+
+                    <br> <br> <br>
+
+                    <button class= "button" type="submit" id="submitChoose">Continuar</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+    // Adicione um evento de escuta para o botão de submit
+    document.getElementById("submitChoose").addEventListener("click", (e)=> {
+        // Obtenha o valor do radio button selecionado
+        const selectedValue = document.querySelector('input[name="userType"]:checked').value;
+
+        // Evite que o formulário seja enviado
+        e.preventDefault();
+        
+        console.log(selectedValue); // Depurar
+
+        // Redirecione com base na seleção
+        if (selectedValue === "ong") {
+            window.location.href = "/ongRegister";
+        } else if (selectedValue === "voluntario") {
+            window.location.href = "/register";
+        } else {
+            alert("Selecione um tipo de usuário antes de continuar.");
+        }
+
+       
+    });
+    </script>
+</body>
+</html>
